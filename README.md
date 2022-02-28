@@ -1,7 +1,5 @@
 # WorldCup-2021
+<img src="predict.gif" width="260" height="300"><br>
 
-[![animation][1]][1]
-
-[1]: https://raw.githubusercontent.com/FKandie/WorldCup-2021/main/predict.gif    
 
 
