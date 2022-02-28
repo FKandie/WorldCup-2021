@@ -1,0 +1,260 @@
+body {
+ background-color:#333;
+ color:white;
+}
+div{
+position:absolute;
+}
+p{
+display:inline;
+}
+#start{
+left:80px;
+top:150px;
+width:150px;
+height:25px;
+padding-top:5px;
+background:linear-gradient(darkorange ,#ffd700);
+z-index:100;
+text-align:center;
+font-weight:700;
+border:2px solid white;
+}
+#groups{
+left:30px;
+top:10px;
+width:250px;
+height:180px;
+background-color:yellowgreen;
+border-radius:10px;
+color:white:;
+}
+#header{
+left:10px;
+top:0px;
+width:220px;
+height:25px;
+padding-top:5px;
+font-weight:700;
+font-family:courier;
+text-align:center;
+}
+.slot1,.slot2,.slot3,.slot4{
+left:10px;
+width:210px;
+padding-left:10px;
+height:25px;
+padding-top:5px;
+background-color:#696969;
+border:1px solid black;
+border-radius:4px;
+font-size:15px;
+font-family:monospace;
+overflow:hidden;
+
+}
+.slot1 div,.slot2 div,.slot3 div,.slot4 div{
+width:40px;
+height:20px;
+left:160px;
+background-size:100% 100%;
+}
+
+.slot1{
+top:25px;
+}
+.slot2{
+top:60px;
+}
+.slot3{
+top:95px;
+}
+.slot4{
+top:130px;
+}
+
+#knockout{
+top:200px;
+left:5px;
+width:300px;
+height:220px;
+background-color:white;
+border:1px solid black;
+}
+.phase{
+width:58px;
+height:40px;
+border:1px solid black;
+color:black;
+font-size:12px;
+font-weight:800;
+background-color:#696969;
+}
+.phase .teamA{
+width:50px;
+height:15px;
+top:3px;
+left:3px;
+background-color:lightgreen;
+border-right:1px solid black;
+border-top:1px solid black;
+overflow-x:scroll;
+overflow-y:hidden;
+}
+.phase .teamB{
+width:50px;
+height:15px;
+top:20px;
+left:3px;
+background-color:lightgreen;
+border-right:1px solid black;
+border-top:1px solid black;
+overflow-x:scroll;
+overflow-y:hidden;
+}
+.boxA,.boxB{
+top:10px;
+}
+.boxC,.boxD{
+top:54px;
+}
+.boxE,.boxF{
+top:120px;
+}
+.boxG,.boxH{
+top:164px;
+}
+.boxA,.boxC,.boxE,.boxG{
+left:10px;
+}
+
+.boxB,.boxD,.boxF,.boxH{
+left:220px;
+}
+
+#quarterphase{
+top:220px;
+left:79px;
+width:140px;
+height:170px;
+border:1px solid black;
+}
+.boxA2,.boxB2{
+top:12px;
+}
+
+.boxC2,.boxD2{
+top:119px;
+}
+.boxA2,.boxD2{
+left:4px;
+}
+.boxB2,.boxC2{
+left:75px;
+}
+
+#semiphase{
+top:275px;
+left:84px;
+width:130px;
+height:65px;
+background-color: yellowgreen;
+font-weight:15px;
+text-align:center;
+font-family:monospace;
+}
+.boxA3,.boxB3{
+top:15px;
+borer-radius:15px;
+}
+.boxA3{
+border-left:1px solid black;
+border-top:1px solid black;
+border-bottom:1px solid black;
+border-right:none;
+}
+.boxB3{
+border-right:1px solid black;
+border-top:1px solid black;
+border-bottom:1px solid black;
+border-left:none;
+}
+
+.boxA3 .teamA,.boxA3 .teamB,
+.boxB3 .teamA,.boxB3 .teamB{
+opacity:0;
+}
+.boxA3{
+left:5px;
+}
+.boxB3{
+left:65px;
+}
+
+#final{
+top:50px;
+left:20px;
+width:280px;
+height:250px;
+background-image:url(https://cdni.rt.com/files/2018.03/article/5ab4f490fc7e93e4708b45b2.jpg);
+border:2px solid black;
+background-size:100% 100%;
+perspective:400px;
+}
+.fteam{
+width:100px;
+heght:25px;
+padding-top:5px;
+border:1px solid black;
+top:40px;
+font-size:19px;
+color:white;
+text-transform:uppercase;
+font-weight:800;
+font-family:courier;
+text-align:center;
+background-color:#6666ff;
+}
+.fA{
+left:10px;
+}
+.fB{
+left:170px;
+}
+.fscore{
+width:50px;
+height:30px;
+border:1px solid black;
+top:40px;
+left:115px;
+font-size:25px;
+color:black;
+text-transform:uppercase;
+font-weight:800;
+font-family:courier;
+background-color:yellow;
+text-align:center;
+}
+#winner{
+width:240px;
+padding:10px;
+height:40px;
+border:1px solid black;
+top:160px;
+left:10px;
+background-color:red;
+font-weight:700;
+font-family:monospace;
+animation:flip 3s linear alternate infinite;
+opacity:0;
+transform-style:preserve-3d;
+}
+
+@keyframes flip{
+from{
+transform:rotateY(-20deg);
+}
+to{
+transform:rotateY(20deg);
+}
+}
